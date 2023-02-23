@@ -1,0 +1,39 @@
+ul{
+    background-color:rgb(20, 171, 153);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 190px;
+}
+
+.nav-list{    
+
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: bell mt;
+    display:block;
+    
+}
+
+
+
+.nav-link:visited{
+    color:white
+
+}
+
+.nav-link:hover{
+    background-color:gray;
+    color:white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav-link:active{
+    color:white;
+}
