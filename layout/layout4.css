@@ -1,0 +1,29 @@
+body{
+
+}
+
+header{
+    border: 2px solid purple;
+    background-color:rgb(197, 32, 32);
+    color: white;
+    padding: 20px;
+    width:200px;
+    height: 631px;
+    float: left;
+
+
+}
+
+.nav-one{
+   border: 2px solid green;
+   background-color :rgb(190, 35, 35);
+   height: 70px;
+
+
+}
+
+.nav-two{
+     border: 2px solid yellow;
+     background-color: antiquewhite;
+     height: 600px;
+}

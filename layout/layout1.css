@@ -1,0 +1,27 @@
+body{
+
+}
+
+.nav-link{
+   
+}
+
+header{
+   border: 2px solid red;
+   height: 40px;
+   background-color: rgb(65, 184, 65);
+   
+}
+
+main{
+    border: 2px solid purple;
+    background-color: bisque;
+
+}
+
+footer{
+    border: 2px solid green;
+    height: 40px;
+    background-color: rgb(65, 184, 65);;
+
+}
