@@ -1,49 +1,58 @@
 <html>
   <head>
-    <title></title>
-	
+    <title></title>	
+	<script>
+		function fun() {
+			let btn = document.getElementById("7").value;
+			document.getElementById("t2").value += btn;
+		}
+		function funn() {
+			let btn = document.getElementById("8").value;
+			document.getElementById("t2").value += btn;
+		}
+	</script>
   </head>
    <body>
-   <table border="1" height="70%"  cellspacing="7" align="center" bgcolor="black">
+   <table height="70%"  cellspacing="7" align="center" bgcolor="black">
      <tr>
 	    <td height="15px" style="border-top-color:white;border-right-color:white;border-bottom-color:white;border-bottom-color:white;" colspan="4">
-			<input type="text" style="font-size:20px" size="40"/>	
+			<input type="text" style="font-size:20px" size="52"/>	
 	    </td>
 	 </tr>
 	 <tr>
-       <td colspan="4"  height="15px" style="border-top-color:white;border-right-color:white;border-bottom-color:white;border-bottom-color:white;" >
-	   <input type="text" style="font-size:20px" size="40"/></td>
-	  
-	   
-	  </tr>
-       <td colspan="4" height="15px" style="border-top-color:white;border-right-color:white;border-bottom-color:white;border-bottom-color:white;" >
-	   <input type="text" style="font-size:20px" size="40"/></td>
-	   
-     </tr>
+       	<td colspan="4" height="29%" style="border-top-color:white;border-right-color:white;border-bottom-color:white;border-bottom-color:white;" >
+	   		<input type="text" id="t2" style="font-size:79.43px" size="10"/>
+	  	</td>
+	</tr>
+	<!-- <tr>
+       	<td colspan="4" height="15px" style="border-top-color:white;border-right-color:white;border-bottom-color:white;border-bottom-color:white;" >
+	   		<input type="text" style="font-size:20px" size="40">
+		</td>
+     </tr> -->
 	  
 	  <tr>
-	  <td><center><font color="white" size="4%">7</font></center></td>
-	  <td><center><font color="white" size="4%">8</font></center></td>
-	  <td><center><font color="white" size="4%">9</font></center></td>
-	  <td><center><font color="white" size="4%">*</font></center></td>
+	  <td><center><font color="white" size="6"><input type="button" onClick="fun()" value=7 id="7"/> </font></center></td>
+	  <td><center><font color="white" size="6"> <input type="button" onClick="funn()" value=8 id="8"/> </font></center></td>
+	  <td><center><font color="white" size="6">9</font></center></td>
+	  <td><center><font color="white" size="6">*</font></center></td>
+	  </tr>
+	 <tr>
+	   <td><center><font color="white" size="6">4</font></center></td>
+	   <td><center><font color="white" size="6">5</font></center></td>
+	   <td><center><font color="white" size="6">6</font></center></td>
+	   <td><center><font color="white" size="6">-</font></center></td>
      </tr>
 	 <tr>
-	   <td><center><font color="white" size="4%">4</font></center></td>
-	   <td><center><font color="white" size="4%">5</font></center></td>
-	   <td><center><font color="white" size="4%">6</font></center></td>
-	   <td><center><font color="white" size="4%">-</font></center></td>
+	   <td><center><font color="white" size="6">1</font></center></td>
+	   <td><center><font color="white" size="6">2</font></center></td>
+	   <td><center><font color="white" size="6">3</font></center></td>
+	   <td><center><font color="white" size="6">+</font></center></td>
      </tr>
 	 <tr>
-	   <td><center><font color="white" size="4%">1</font></center></td>
-	   <td><center><font color="white" size="4%">2</font></center></td>
-	   <td><center><font color="white" size="4%">3</font></center></td>
-	   <td><center><font color="white" size="4%">+</font></center></td>
-     </tr>
-	 <tr>
-	   <td></td>
-	   <td><center><font color="white" size="4%">0</font></center></td>
-	   <td><center><font color="white" size="4%">.</font></center></td>
-	  <td bgcolor="orange"><center><font color="white" size="4%">=</font></center></td>
+	   <td></td>		
+	   <td><center><font color="white" size="6">0</font></center></td>
+	   <td><center><font color="white" size="6">.</font></center></td>
+	  <td bgcolor="orange"><center><font color="white" size="6">=</font></center></td>
      </tr>
   </table>
    </body>
