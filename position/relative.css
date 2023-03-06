@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+.nav-one{
+    border: 2px solid green;
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+
+.nav-two{
+    border: 2px solid red;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+    
+
+.nav-three{
+    border: 2px solid purple;
+    background-color: rgb(194, 136, 146);
+    height: 100px;
+    width: 100px;
+   position: relative;
+   left: 200px;
+}
+
+.nav-four{
+    border: 2px solid blue;
+    background-color: rgb(94, 162, 189);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+    
+
+
+.nav-five{
+    border: 2px solid yellow;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}

@@ -1,0 +1,35 @@
+.body{
+    margin: 0px;
+
+}
+
+.nav-list{
+    border: 2px solid blue;
+    position: absolute;
+}
+
+.normal{
+    border: 2px solid yellow;
+     background-color: aqua;
+     font-size: 20px;
+    display: none;
+     
+}
+
+.nav-list:hover .normal{
+    display: block;
+}
+
+.nav-one:hover{
+    background-color: rgb(145, 11, 29);
+    font-size: 25px;
+    font-family:bell mt;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav{
+    border: 2px solid red;
+    background-color: bisque;
+}
