@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+
+}
+
+.nav-list{
+     border: 2px solid green;
+     background-color: rgb(7, 7, 105);
+     color: white;
+     padding: 8px;
+     height: 25px;
+     position: sticky;
+     top: 0px;
+}
+
+.para{
+    border: 2px solid red;
+    margin-top: 0px;
+    background-color: aquamarine;
+    margin: 0px;
+    
+}
+
+p{
+     margin: 0px;
+}
