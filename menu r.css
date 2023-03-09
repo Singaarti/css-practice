@@ -1,0 +1,76 @@
+body{
+  
+   margin: 0px;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+.nav{
+    border: 2px solid green;
+    background-color: rgb(8, 37, 99);
+    color: white;
+    padding: 8px;
+    width: 200px;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+.box{
+    border: 2px solid red;
+    background-color:aquamarine;
+    color: white;
+    width: 100%;
+    display: none;
+    float: left;
+    padding:6px;
+    position: absolute;
+    top: 100%;
+    left: 0px;  
+}
+
+.nav:hover .box{
+    display: block;
+
+}
+
+a{
+    display: block;
+    padding:8px;
+}
+
+.one:hover{
+    background-color: bisque;
+    color: black;
+}
+
+
+.navlist-one{
+    border: 2px solid green;
+    background-color: rgb(8, 37, 99);
+    color: white;
+    padding: 8px;
+    width:200px;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+.command{
+    border: 2px solid red;
+    background-color:aquamarine;
+    color: white;
+    width: 100%;
+    padding:6px;
+    position: absolute;
+    top: 100%;
+    left: 0px;  
+
+}
+
+{
+
+}
