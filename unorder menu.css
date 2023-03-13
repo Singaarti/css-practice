@@ -1,0 +1,58 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.unorder-list{
+    border: 2px solid green;
+    background-color: rgb(14, 14, 104);
+    color: white;
+    list-style-type: none;
+    width: 200px;
+    
+}
+
+.nav{
+    border: 2px solid red;
+    position:relative;
+
+}
+
+.nav:hover{
+    background-color:white;
+    color: black;
+}
+
+.box{
+    border: 2px solid purple;
+    background-color:aquamarine;
+    list-style-type: none;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    display: none;
+    position: absolute;
+   
+}
+
+.nav:hover .box{
+   display: block;
+}
+
+
+
+.list:hover{
+    background-color: azure;
+    color: black; 
+
+}
