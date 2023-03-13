@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu3.css">
+</head>
+<body>
+
+<ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="#">Courses</a>
+        <ul class="content">
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">--Cours sdf ksd fde 1--</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="#">hello</a>
+        <ul class="content">
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">--Cours sdf ksd fde 1--</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+            <li class="nav-item2"><a href="#" class="nav-link2">Course 1</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">login</a></li>
+ 
+</ul>
+
+<style>
+.nav-list::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid blue;
+}
+
+.nav-item{
+    border: 2px solid red;
+    float: left;
+}
+
+.nav-item:hover{
+    background-color: green;
+}
+
+
+.nav-link{
+    border: 2px solid green;
+    display: block;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.content{
+    border: 2px solid blue;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown .content{
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    width: 120px;
+    display: none;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+.content .nav-link2{
+    padding: 5px 16px;
+    border: 2px solid red;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-link2:hover{
+    background-color: yellow;
+}
+
+</style>
+</body>
+</html>
