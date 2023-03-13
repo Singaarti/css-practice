@@ -1,0 +1,57 @@
+body{
+  background-color: aquamarine;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+    border: 2px solid red;
+    background-color: maroon;
+    float: left;
+    font-size: 19px;
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+    color: white;
+    width: 200px;
+}
+
+.container:hover{
+    background-color:maroon;
+}
+
+
+.box{
+    border: 2px solid yellow;
+    background-color: white;
+    color: black;
+    font-size: 19px;
+    float: left;
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    
+}
+
+
+
+.container:hover .box{
+    display: block;
+
+}
+
+
+
+a:hover{
+   background-color: maroon;
+   color: white;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
