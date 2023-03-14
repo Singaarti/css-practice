@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<body>
+    <div class="container">
+        outer
+        <div class="one aarti">one</div>
+        <div class="two aarti">
+            <a href="">hello</a>
+            <a href="">hello</a>
+            <a href="">hello</a>
+            <a href="">hello</a>
+        </div>
+        <div class="three aarti">one</div>
+    </div>
+<style>
+    .container{
+        border: 2px solid red;
+        position: absolute;
+        top:20%;
+        left:50%;
+    }
+    .one{
+        border: 2px solid green;
+    }
+    .two{
+        border: 2px solid black;
+        position: absolute;
+        top:0%;
+    }
+    .three{
+        border: 2px solid blueviolet;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: aqua;
+    }
+    a:hover{
+        color: blue;
+    }
+    .aarti{
+        border: 2px solid brown;
+    }
+    .container:hover .two{
+        top:100%;
+    }
+</style>
+</body>
+</html>
