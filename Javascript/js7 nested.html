@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "aarti";
+        var dept = "sales";
+        var salary = 0;
+        var deduction = 0;
+        var present = 20;
+        var abs = 8;
+        var hra = 0;
+        var da = 0;
+        var ea = 0;
+        var pf = 0;
+        var gip = 0;
+        var grossSalary = 0;
+        var totalDedcution = 0;
+        var netSalary = 0;
+        var ca = 5000;
+
+        
+        //Salary calculation
+        if ( dept == "sales") {
+            salary = present * 2000;
+        } else if (dept == "purchase") {
+            salary = present * 1500;
+        } else {
+            salary = present * 1000;
+        }
+
+        //Deductions
+        if(dept == "sales"){
+            //Sales
+            if(abs >= 7){
+                deduction = abs * 1000;
+            } else if (abs >= 5){
+                deduction = abs * 700;
+            } else if (abs >= 2) {
+                deduction= abs * 100;
+            } else {
+                deduction = 0;
+            }
+        } else if (dept == "purchase") {
+            //purchase
+            if (abs >= 7) {
+                deduction = abs * 500;
+            } else if (abs >= 5) {
+                deduction = abs * 300;
+            } else if (abs >= 2) {
+                deduction = abs * 100;
+            } else {
+                deduction = 0;
+            }
+        } else {
+            deduction = 0;
+        }
+
+        salary = salary - deduction;
+          
+
+        //HRA
+        if (dept == "sales") {
+            if (salary > 20000) {
+                hra = salary * 5 / 100;
+            }
+        } else if (dept == "purchase") {
+            if (salary > 20000) {
+                hra = salary * 8 / 100;
+            }
+        } else {
+            hra = salary * 3 / 100;
+        }
+
+        //DA
+        if (present >= 25) {
+            if (dept == "sales") {
+                da = salary * 3 /100;
+            } else {
+                da = salary * 5 / 100;
+            }
+        }
+
+        //EA
+        if (dept == "sales") {
+            if (present >= 25) {
+                ea = 3000;
+            } else if (present >= 20) {
+                ea = 2000;
+            } else {
+                ea = 1000;
+            }
+        } else if (dept == "purchase"){
+            if (present >= 25) {
+                ea = 2500;
+            } else if (present >= 20) {
+                ea = 1800;
+            } else {
+                ea = 1000;
+            }
+        } else {
+            ea = 1000;
+        }
+
+        //Deduction 
+        //pf
+        if (present >= 25 ) {
+            if (dept == "sales") {
+                pf = salary * 8 /100;
+            }
+        } else {
+            pf = salary * 5 / 100;
+        }
+
+        //GIP
+        if (present < 15) {
+            gip = 1000;
+        } else if (present <= 20) {
+            gip = 2000;
+        } else {
+            gip = 3000;
+        }
+
+        grossSalary = salary + hra + da + ca + ea;
+        totalDedcution = pf + gip;
+        netSalary = grossSalary - totalDedcution;
+
+        document.write("<h1>Salary slip</h1>");
+        document.write("Name: " + name + "<br>");
+        
+        document.write("Salary: " + salary + "<br>");
+        document.write("Deductions: " + deduction + "<br>");
+        document.write("HRA : " + hra + "<br>");
+        document.write("DA : " + da + "<br>");
+    </script>
+    
+</body>
+</html>
