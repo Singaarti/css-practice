@@ -1,0 +1,63 @@
+body{
+   background-color:rgb(233, 30, 141) ;
+    padding: 0px;
+    margin: 0px;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+   
+    background-color: white;
+    box-shadow: 3px 5px 7px white;
+    width:23%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 340px;
+    padding: 16px;
+}
+
+h1{
+    text-align: center;
+
+}
+
+.a{
+    
+    text-align: center;
+    display: inline-block;
+    border-radius:10px;
+    width: 49%;
+    padding: 2%;
+    
+
+
+}
+a{
+    text-decoration: none;
+   color: aliceblue;
+   
+}
+.input1{
+    width: 100%;
+    padding: 2%;
+    margin-top: 10px;
+}
+.sub{
+    /* background-color: rgb(233, 30, 141); */
+    background: linear-gradient(50deg, purple, rgb(235, 8, 103));
+    color: aliceblue;
+    border-radius:8px;
+}
+.a :hover{
+    background-color: rgb(233, 30, 141);
+    color: aliceblue;
+}
+
+.href{
+    color:  rgb(233, 30, 141);
+
+}

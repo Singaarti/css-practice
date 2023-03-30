@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.maincard{
+    border: 2px solid green;
+    margin: auto;
+    width: 250px;
+    height: 400px;
+
+}
+
+.card{
+  border: 2px solid red;
+}
+
+.img{
+    background-image: url("hello.jpg");
+    border: 2px solid yellow;
+    height: 40%;
+    background-size: cover;
+
+}
+
+.card-body{
+    border:2px solid rebeccapurple;
+    height: 60%;
+}
+
+h3{
+  
+    font: 20px;
+  
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+    margin: 0px;
+
+}

@@ -1,0 +1,32 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    border: 2px solid red;
+    position: relative;
+    width: 250px;
+   
+}
+
+.box{
+    border: 2px solid green;
+    background-color: blue;
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    transition: height 2s;
+
+}
+
+.card:hover .box{
+    height: 100%;
+
+}
