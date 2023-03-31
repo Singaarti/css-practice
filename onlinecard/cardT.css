@@ -1,0 +1,74 @@
+
+body{
+    background-color: pink;
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+.container{
+  /* border: 2px solid red; */
+   background-color: white;
+   height: 430px;
+   margin: auto;
+   width:280px;
+   border-radius: 20px;
+   box-shadow: 4px 2px 8px gray;
+
+}
+/* .body{
+    border: 2px solid purple;
+    top: 100%;
+    width: 100%;
+    height: 12%;
+           
+} */
+
+.img{
+    /* border: 2px solid green; */
+    background-image: url("image1.jpg");
+  
+    background-size: cover;
+    /* border-radius: 20px; */
+    height: 70%;
+
+}
+
+.card-body{
+    /* border: 2px solid rgb(0, 4, 255); */
+    background-color: white;
+    padding: 10px;
+
+}
+
+
+.code{
+    font-family: arial black;
+    color: rgb(20, 236, 20);
+
+}
+
+button{
+    /* border: 2px solid green; */
+    background-color: orange;
+    color:white;
+    margin-top: 5px;
+    padding: 8px 20px;
+  
+}
+
+.button{
+
+    /* border: 2px solid green; */
+
+    background-color:orangered;
+    color:white;
+    margin-top: 5px;
+    padding: 8px 30px;
+
+}
+
