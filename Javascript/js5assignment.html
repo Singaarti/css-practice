@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<br><br>");
+
+        document.write("Q.1 <br><br>");
+
+        var color = "yellow"
+
+        if(color == "green"){
+            document.write("Principal")
+        }else if(color == "red"){
+            document.write("faculty")
+        }else if(color =="blue"){
+            document.write("student")
+        }else{
+            document.write("unknown employee")
+        }
+            
+
+        document.write("<br><br>");
+
+        document.write("Q.2 <br><br>");
+
+        var salary = 30000;
+        var hra  = 0;
+        
+        if(salary >= 60000){
+            hra  = salary*20/100;
+            document.write(hra);
+        }else if(salary >= 40000){
+            hra  = salary*10/100;
+            document.write(hra);
+        }else if(salary >=20000){
+            hra  = salary*0.05;
+            document.write(hra);
+        }else{
+            hra = salary*3/100;
+            document.write(hra);
+        }
+       
+        document.write("<br><br>");
+
+        document.write("Q.3 <br><br>");
+
+        var age = 25
+        
+        if(age >= 50){
+            document.write("Old")
+        }else if(age >= 30){
+            document.write("Adult")
+        }else if(age >= 18){
+            document.write("young")
+        }else{
+            document.write("child")
+        }
+
+        document.write("<br><br>");
+
+        document.write("Q.4 <br><br>");
+
+        var percent12th = 100;
+        
+        if(percent12th >= 90){
+            document.write(percent12th + "%: laptop")
+        }else if(percent12th >= 60){
+            document.write("smartphone")
+        }else {
+            document.write("tuta phone")
+        }
+        
+       
+    </script>
+</body>
+</html>

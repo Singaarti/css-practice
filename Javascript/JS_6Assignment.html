@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empName = 'Aarti';
+        var totalAbs = 4;
+        var totalPresent = 26;
+        var totalDays = 30;
+        var basicSalary = 0;
+        var dept = 'sales';
+        var deduction = 0;
+        var hra = 0;
+        var Da =0;
+        var ea=0;
+        var pf=0;
+        var gip = 0;
+
+        // 3..4 --> basic salary calculation
+        if (dept == 'sales') {
+            basicSalary = totalPresent * 2000;
+        } else if (dept == 'purchase') {
+            basicSalary = totalPresent * 1500;
+        } else {
+            basicSalary = totalPresent* 1000;
+        }
+
+        // 4..A Deductions
+        if(dept == "sales"){
+            if(totalAbs >=7){
+                deduction = totalAbs*1000  
+            }else if(totalAbs >=5){
+                deduction = totalAbs*700
+            }else if(totalAbs >=2){
+                deduction = totalAbs*100
+            }else{
+                deduction = totalAbs*0 // 0
+            } 
+        }else if(dept == "purchase"){
+            if(totalAbs >=7){
+                deduction = totalAbs*500  
+            }else if(totalAbs >=5){
+                deduction = totalAbs*300
+            }else if(totalAbs >=2){
+                deduction = totalAbs*100
+            }else{
+                deduction = totalAbs*0  //0
+            } 
+        }else{
+            deduction = 0;
+        }
+
+        //4..B HRA
+        if(basicSalary > 20000 && dept == 'purchase'){
+            hra = basicSalary * 8 / 100
+        }else if(basicSalary >20000 && dept == 'sales'){
+            hra = basicSalary * 5 / 100
+        }else{
+            hra = basicSalary * 3 / 100
+        }
+
+        //4..C DA
+        if(totalPresent >= 25 && dept =='sales'){
+                da = basicSalary*3/100
+        }else{
+            da = basicSalary*5/100
+        }
+
+        //4.. D EA
+        if(dept =='sales' && totalPresent >= 25){
+            ea = 3000
+        }else if(dept =='sales' && totalPresent >= 20){
+            ea = 2000
+        }else if(dept == 'purchase' && totalPresent >= 25){
+            ea =2500
+        }else if(dept == 'purchase' && totalPresent >= 20){
+            ea =1800
+        }else{
+            ea =1000
+        }
+
+        //4..E PF
+
+        if(totalPresent >=25 && dept == 'sales'){
+            pf = basicSalary*8/100
+        }else{
+            pf=basicSalary*5/100
+        }
+
+        if (totalPresent < 15) {
+            gip = 1000;
+        } else if (totalPresent <= 20) {
+            gip = 2000;
+        } else {
+            gip = 3000;
+        }
+
+        //Gross Salary
+        gs = basicSalary + hra + da + ea;
+        var td = pf + gip;
+        var ns = gs - td;   
+
+        //print details
+        document.write("<center><h1> Pay Slip </h1></center>");
+        document.write("Total Present: " + totalPresent + "<br>");
+        document.write("Total Absent: " + totalAbs + "<br>");
+        document.write("<hr>");
+        document.write("Name: " + empName + "<br>");
+        document.write("Basic Salary: " + basicSalary + "<br>");
+        document.write("Deductions: " + deduction + "<br>");
+        document.write("HRA: " + hra + "<br>");
+        document.write("DA: " + da +"<br>");
+        document.write("EA: " + ea +"<br>");
+        document.write("pf: " + pf +"<br>");
+        document.write("GIP: " + gip + "<br>");
+        document.write("Total deduction: " + td + "<br>");
+        document.write("Net Salary: " + ns  + "<br>");
+
+    </script>
+</body>
+</html>
