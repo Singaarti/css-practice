@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //charge
+    let charge =0;
+    let unit = 500;
+    let surcharge = 0;
+
+
+    if(unit >200){
+        charge = unit*15
+    }else if(unit >100){
+        charge = unit*10
+    }else{
+        charge = unit*3
+    }
+  //surcharge
+
+  if(charge >5000){
+    surcharge= charge*5/100
+  }else if(charge >1000){
+    surcharge= charge*3/100
+  }else{
+    surcharge = 0
+  }
+
+  //BP
+
+  bp = charge + surcharge
+
+  document.write(charge+'<br>');
+  document.write(surcharge + "<br>");
+  document.write(bp + "<br>");
+ 
+    
+    </script>
+</body>
+</html>

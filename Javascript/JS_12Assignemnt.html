@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let salary =30000;
+        let hra = 0;
+        let da =0;
+        let ca = 0;
+        let en = 0;
+        let dc = 0;
+        let total=0;
+        let net =0;
+        let gip=0 ;
+        let pf = 0;
+        let gs =0 ;
+
+        //hra Dependent on bank
+
+        if(salary<=10000){
+            hra = salary*30/100
+        }else if(salary <=30000){
+            hra = salary*25/100
+        }else if(salary >30000){
+            hra = salary*20/100
+        }
+
+        //DA
+        
+        da=salary*30/100;
+
+        //conveyance Allowance
+
+        if(salary <=10000){
+            ca = 50
+        }else if(salary <=20000){
+            ca = 75
+        }else if(salary >20000){
+            ca = 100
+        }
+
+        //enterainerment Allowance
+
+        if(salary <=10000){
+            en = 0
+        }else if(salary >10000){
+            en = 100
+        }
+
+        //deductions
+        
+          pf=salary*6/100
+
+        if(salary <=15000){
+            gip = 40
+        }else if(salary <= 30000){
+            gip = 60
+        }else if(salary > 30000){
+            gip = 80
+        }
+
+        //calculate the
+        gs = salary + hra + da + ca + en 
+        total  = pf + gip 
+        net = gs-total 
+
+        document.write("gs " + gs+ "<br>");
+        document.write("total " + total+ "<br>");
+        document.write("net " + net+ "<br>");
+
+
+
+        document.write("hra" +  hra +"<br>");
+        document.write("da" +  da +"<br>");
+        document.write("ca" +  ca +"<br>");
+        document.write("en" +  en +"<br>");
+        document.write("pf" +  pf +"<br>");
+        document.write("gip" +  gip +"<br>");
+
+
+    </script>
+</body>
+</html>

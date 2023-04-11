@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'aarti'
+        let checkin ='1/2/2023'
+        let checkout ='5/2/2023'
+        let totalDays= 40
+        let room ="gen"
+        let total;
+        
+    
+        if(totalDays >= 20){
+            totalDays=totalDays-2
+        }else if(totalDays >=10){
+            totalDays=totalDays-1
+        }
+
+        if (room == "ac") {
+            total = totalDays * 500;
+        } else {
+            total = totalDays * 200;
+        }
+         
+
+
+        document.write("Your total bill is " + total);
+
+
+    </script>
+</body>
+</html>
