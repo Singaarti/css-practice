@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var unit = 400;
+        var charge = 0;
+        var tax = 0;
+
+        if(unit > 300){
+            charge = unit*24.82
+        }else if(unit > 200){
+            charge = unit*22.45
+        }else{
+            charge = unit*18.62
+        }
+
+        tax = charge*0.142;
+        gas = charge + tax
+
+        document.write(charge +"<br>");
+        document.write(tax +"<br>");
+        document.write(gas +"<br>");
+
+
+        
+    </script>
+    
+</body>
+</html>
