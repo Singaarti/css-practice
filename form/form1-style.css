@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+
+    background: #f2f2f2 ;
+  }
+  
+  .h1{
+   font-size: 30px;
+   line-height: 24px;
+   padding: 25px;
+   text-align: center;
+  
+  }
+  
+.container{
+    background-color:rgba(135, 207, 235, 0.082);
+    width: 350px;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-top: 5px solid blue ;
+    box-shadow: 0 0 7px 5px rgba(7,0,0,0.5);
+}
+
+.Fwidthh{
+    width: 200px;
+}
+
+
+.padding{
+    padding: 4px 8px;
+  }
+
+label{
+    width:100px;
+    display: inline-block;
+}

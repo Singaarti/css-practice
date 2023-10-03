@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1  class="h1 align">Student Registration Form</h1>
+    <div >
+        <form action="">
+
+            <h3 class="padding">Studentc Information</h3>
+            <small id="namemasg"></small><br>
+            <input id="First" class="Fwidthh padding margin" placeholder="First Name" name="firstname" >
+            
+            
+            <small id="namemasg2"></small><br>
+
+            <input id="Middle" class="Fwidthh padding margin" placeholder="Middle Name" name="lastname">
+
+              <small id="namemasg2" ></small><br>
+
+            <input id="last" class="Fwidthh padding margin" placeholder="Last Name" name="phoneno">
+            <br>
+                <small></small>
+            <br>
+            <br>     
+            <input id="date" class="width padding margin" placeholder="Date of Birth"  name="dateofbirth">
+                <small></small>
+
+            <input id="Student" class="width padding margin" placeholder="Student ID" name="Studentid">
+            <br>
+                 <small></small>
+            <br>
+            <br>
+            <h3 class="padding">Address</h3>
+            <input id="Address"  class="padding margin widthful" placeholder="Street Address" name="Address">
+            <br>
+            <small></small>
+            <br>
+            <br>
+            <input id="City"  class="padding margin width" placeholder="city" name="city">
+            <small></small>
+            <input id="state"  class="padding margin width" placeholder="state" name="state">
+            <br>
+            <small></small>
+            <br>
+            <input id="Country"  class="padding margin width" placeholder="Country" name="Country">
+            <small></small>
+            <input id="Zip"  class="padding margin width" placeholder="Zip Code" name="Zip">
+            <br>
+            <small></small>
+            <br>
+            
+            <h3 class="padding">Contact Information</h3> 
+            <input id="Email"  class="padding margin width bmargin" placeholder="E-mail" name="email">
+            <small></small> 
+            <input id="Email"  class="padding margin width " placeholder="E-mail" name="email">
+            <small></small>
+            <h3 class="padding">Courses</h3> 
+            <input id="Courses"  class="padding margin width bmargin " placeholder="Courses" name="Courses">
+            <small></small>
+            <input id="language"  class="padding margin width bmargin" placeholder="Language" name="Language">
+            <small></small>
+            
+    <input  id="submit"   class="padding margin width bbmargin widthful" type="button" value="submit your Registration form" name="submit">
+        </form>
+    </div>
+
+</div>
+<script>
+        function form(){
+            First = document.getElementById("First").value;
+            masg = document.getElementById("namemasg");
+
+        if(First == ""){
+            masg.innerHTML = "please Enter Name";
+            masg.style.color = "red";
+        }else{
+            masg.innerHTML = "done";
+            masg.style.color = "green";
+            masg.style.backgroundColor = "blue";
+    }
+
+}
+
+submit = document.getElementById("submit");
+masg = document.getElementById("First");
+masg.addEventListener("Keydown",form)
+submit.addEventListener("click",form);
+
+</script>
+
+</body>
+</html>
