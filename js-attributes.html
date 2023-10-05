@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+        <form>
+            <input  id="fname" placeholder="firstname" name="fisrtname" type="text" title="hi title"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    <script>
+
+        input = document.getElementById("fname");
+
+            console.log(input);
+            console.log(input.attributes);
+        // console.log(input.attributes.name.value);
+            console.log(input.attributes.id.value);
+            console.log(input.attributes.placeholder.value);
+            console.log(input.attributes.type.value);   
+
+        // second method
+
+            // console.log(input.name);
+            //console.log(input.id);
+
+
+             //att = input.hasAttribute("title");
+            // att = input.hasAttribute("class");
+            // att = input.hasAttribute("placeholder");
+              // console.log(att);
+
+
+            //attr = input.removeAttribute("name");
+            //attr = input.removeAttribute("title")
+             //console.log(attr);
+
+             
+            //input.setAttribute("maxlength", 10);
+            //input.setAttribute("type","aarti");
+
+
+
+    </script>
+</body>
+</html>
