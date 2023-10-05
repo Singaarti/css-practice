@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    .body{
+
+      background: #f2f2f2 ;
+    }
+
+    .h1{
+     font-size: 35px  ;
+     line-height: 24px;
+     padding: 25px;
+     text-align: center;
+
+    }
+    .h3{
+      font-size: 35px  ;
+     line-height: 24px;
+
+    }
+
+    .container{
+        background-color:rgba(135, 207, 235, 0.082);
+        width: 850px;
+        padding: 10px;
+        margin: 10px auto 0;
+        border-top: 5px solid blue ;
+        box-shadow: 0 0 7px 5px rgba(7,0,0,0.5);
+    }
+
+    .width{
+     width: 374px;
+    }
+
+    .widthful{
+      width: 757px;
+    }
+
+
+    .Fwidthh{
+        width: 245px;
+    }
+
+    .padding{
+      padding: 4px 8px;
+    }
+
+    .margin{
+      margin: 0px 4px  ;
+    }
+
+    .bmargin{
+      margin-bottom: 30px;
+    }
+
+    .bbmargin{
+      margin-bottom: 15px;
+    }
+    .align{
+      justify-items: center;
+    }
+
+    .center{
+    margin: 0 auto;
+    width: 784px;
+    }
+
+    .form-control{
+        float: left;
+        
+        }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stu-form.css" >
+    <script src="stu-form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1  class="h1 align">Student Registration Form</h1>
+    <div >
+        <form action="">
+
+            <h3 class="padding">Studentc Information</h3>
+            <div class="form-control">
+                <input id="First" class="Fwidthh padding margin" placeholder="First Name" name="firstname" >
+                <br><small id="namemasg"></small>
+            </div>
+
+            <div class="form-control">
+                <small id="namemasg2"></small><br>
+                <input id="Middle" class="Fwidthh padding margin" placeholder="Middle Name" name="lastname">
+                <br><small id="namemasg"></small>
+
+            </div>
+            
+            <div class="form-control">
+                <input id="last" class="Fwidthh padding margin" placeholder="Last Name" name="phoneno">
+                <br><small id="namemasg"></small>
+            </div>       
+
+            <div>    
+                <input id="date" class="width padding margin" placeholder="Date of Birth"  name="dateofbirth">
+                <br><small id="namemasg"></small>
+           </div>
+
+           
+            <div>    
+                <input id="Student" class="width padding margin" placeholder="Student ID" name="Studentid">
+                <br><small></small>
+            </div>
+            
+            <br>
+            <h3 class="padding">Address</h3>
+
+           <div> 
+                <input id="Address"  class="padding margin widthful" placeholder="Street Address" name="Address">
+                <br><small></small>
+            </div>
+           
+        <div>
+            <input id="City"  class="padding margin width" placeholder="city" name="city">
+            <br>
+            <small></small>
+        </div>
+           
+        <div>
+            <input id="state"  class="padding margin width" placeholder="state" name="state">
+            <br>
+            <small></small>
+        </div>
+
+        <div>
+            <input id="state"  class="padding margin width" placeholder="state" name="state">
+            <br>
+            <small></small>
+        </div>
+          
+        <div>
+            <input id="Country"  class="padding margin width" placeholder="Country" name="Country">
+            <br>
+            <small></small>
+        </div>
+
+        <div>
+            <input id="Zip"  class="padding margin width" placeholder="Zip Code" name="Zip">
+            <br>
+            <small></small>
+        </div>
+
+            <h3 class="padding">Contact Information</h3> 
+
+            <div>
+                <input id="Email"  class="padding margin width bmargin" placeholder="E-mail" name="email">
+                <br>
+                <small></small> 
+            </div>
+
+            <div>
+                <input id="Email"  class="padding margin width " placeholder="E-mail" name="email">
+                <br>
+                <small></small>
+            </div>
+           
+            <h3 class="padding">Courses</h3> 
+
+            <div>
+                <input id="Courses"  class="padding margin width bmargin " placeholder="Courses" name="Courses">
+                <br>
+                <small></small>
+            </div>
+            
+            <div>
+                <input id="language"  class="padding margin width bmargin" placeholder="Language" name="Language">
+                <br>
+            <small></small>
+            </div>
+            
+         <div>
+            <input  id="submit"   class="padding margin width bbmargin widthful" type="button" value="submit" name="submit">
+
+         </div>  
+
+        </form>
+    </div>
+
+</div>
+<script>
+    
+    function form(){
+        fname = document.getElementById("First").value;
+        masg = document.getElementById("namemasg");
+
+        mname = document.getElementById("Middle").value;
+        midmasg = document.getElementById("namemasg2");
+    
+    
+        
+      
+        if(fname == ""){
+            masg.innerHTML = "please Enter Name";
+            masg.style.color = "red";
+        }else{
+            masg.innerHTML = "done";
+            masg.style.color = "green";
+            masg.style.backgroundColor = "blue";
+        }
+
+        if(mmasg == ""){
+            midmasg.innerHTML = "please Enter Name";
+            midmasg.style.color = "red";
+        }else{
+            midmasg.innerHTML = "done";
+            midmasg.style.color = "green";
+            midmasg.style.backgroundColor = "blue";
+        }
+
+    
+    }
+    
+    submit = document.getElementById("submit");
+    masg = document.getElementById("First");
+
+    midmasg = document.getElementById("Middle");
+
+    submit.addEventListener("click",form);
+               
+    
+</script>
+
+</body>
+</html>

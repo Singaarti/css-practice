@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-valida.css" >
+    <script src="form-valida.js"></script>
+
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="h1">Student Registration Form</h1>
+    <div>
+        <form>
+
+            <label>first Name : </label>
+            <input  id="First" class="Fwidthh padding" placeholder="First Name" name="firstname" >
+            <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small id="namemasg"></small>
+            <br>
+            <label>Middle Name : </label> 
+            <input id="Middle" class="Fwidthh padding" placeholder="Middle Name" name="MiddleName">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small id="namemasg2"></small>
+            <br>
+           <label>Last Name : </label>
+           <input id="Last" class="Fwidthh padding" placeholder="Last Name" name="LastName">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small id="namemasg3"></small>
+            <br>
+           <label>Date of Birth : </label>
+           <input id="date" class="Fwidthh padding " placeholder="Date of Birth" name="dateofbirth">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg4"></small>
+            <br>
+           <label>Address : </label>
+           <input id="Address" class="Fwidthh padding" placeholder="Address" name="Address">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg5"></small>
+            <br>
+            <label>phone.no : </label>
+            <input id="phone" class="Fwidthh padding" placeholder="phone.no" name="phone">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg6"></small>
+            <br>
+            <label>Courses : </label>          
+            <input id="Courses" class="Fwidthh padding" placeholder="Courses" name="Courses">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg7"></small>
+            <br>
+            <label>Language : </label>
+            <input id="Language" class="Fwidthh padding" placeholder="Language" name="Language">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg8"></small>
+            <br>
+            <label>Password : </label>
+            <input id="password" class="Fwidthh padding" placeholder="Password" name="password">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <small id="namemasg9"></small>
+            <br>
+            <input id="submit" class="Fwidthh padding  align" type="button"  value="submit">
+            <br>
+
+
+        </form>
+    </div>
+</div>
+<script>
+    function form(){
+        First = document.getElementById("First").value;
+        masg = document.getElementById("namemasg");
+
+        middle = document.getElementById("Middle").value;
+        middlemasg = document.getElementById("namemasg2");
+
+        last = document.getElementById("Last").value;
+        lastmasg = document.getElementById("namemasg3");
+
+        date = document.getElementById("date").value;
+        datemasg = document.getElementById("namemasg4");
+
+        Address = document.getElementById("Address").value;
+        Addmasg = document.getElementById("namemasg5");
+
+        phone = document.getElementById("phone").value;
+        phonemasg = document.getElementById("namemasg6");
+
+        course = document.getElementById("Courses").value;
+        coursemasg = document.getElementById("namemasg7");
+
+        Langu = document.getElementById("Language").value;
+        langmasg = document.getElementById("namemasg8");
+
+        pass = document.getElementById("password").value;
+        passmasg = document.getElementById("namemasg9");
+
+
+    if(First == ""){
+        masg.innerHTML = "please Enter Name";
+        masg.style.color = "red";
+    }else{
+        masg.innerHTML = "done";
+        masg.style.color = "green";
+}
+
+if(middle == ""){
+        middlemasg.innerHTML = "please Enter Middle";
+        middlemasg.style.color = "red";
+    }else{
+        middlemasg.innerHTML = "done";
+        middlemasg.style.color = "green";
+}
+
+
+if(last == ""){
+        lastmasg.innerHTML = "please Enter phone.no";
+        lastmasg.style.color = "red";
+}else{
+        lastmasg.innerHTML = "done";
+        lastmasg.style.color = "green";
+        lastmasg.style.backgroundColor = "blue";
+}
+
+if(date == ""){
+        datemasg.innerHTML = "please Enter Date of Birth";
+        datemasg.style.color = "red";
+}else{
+        datemasg.innerHTML = "done";
+        datemasg.style.color = "green";
+        datemasg.style.backgroundColor = "blue";
+}
+
+if(Address == ""){
+        Addmasg.innerHTML = "please Enter Address";
+        Addmasg.style.color = "red";
+}else{
+        Addmasg.innerHTML = "done";
+        Addmasg.style.color = "green";
+        Addmasg.style.backgroundColor = "blue";
+}
+
+if(phone == ""){
+        phonemasg.innerHTML = "please Enter Phone.No";
+        phonemasg.style.color = "red";
+}else{
+        phonemasg.innerHTML = "done";
+        phonemasg.style.color = "green";
+        phonemasg.style.backgroundColor = "blue";
+}
+
+
+if(course == ""){
+        coursemasg.innerHTML = "please Enter Course";
+        coursemasg.style.color = "red";
+}else{
+        coursemasg.innerHTML = "done";
+        coursemasg.style.color = "green";
+        coursemasg.style.backgroundColor = "blue";
+}
+
+
+if(Langu == ""){
+        langmasg.innerHTML = "please Enter Language";
+        langmasg.style.color = "red";
+}else{
+        langmasg.innerHTML = "done";
+        langmasg.style.color = "green";
+        langmasg.style.backgroundColor = "blue";
+}
+
+if(pass == ""){
+        passmasg.innerHTML = "please Enter Password";
+        passmasg.style.color = "red";
+}else{
+        passmasg.innerHTML = "done";
+        passmasg.style.color = "green";
+        passmasg.style.backgroundColor = "blue";
+}
+
+}
+
+submit = document.getElementById("submit");
+
+masg = document.getElementById("First");
+
+middlemasg = document.getElementById("Middle");
+
+lastmasg = document.getElementById("Last");
+
+datemasg = document.getElementById("date");
+
+Addmasg = document.getElementById("Address");
+
+Phonemasg = document.getElementById("phone");
+
+coursemasg = document.getElementById("courses");
+
+langmasg = document.getElementById("Language");
+
+pass = document.getElementById("password");
+
+submit.addEventListener("click",form);
+
+</script>
+</body>
+</html>
