@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //////Class Declaration
+     //   class student{
+     //       constructor(){
+     //           this.name = "kajal";
+     //           this.age = 20;
+     //           this.rollno = 12;
+     //           this.phone = 8934524213;
+     //           this.fee = 2000;
+     //       }
+     //       print(){
+     //           console.log(this.name);
+     //           console.log(this.age);
+     //           console.log(this.rollno);
+     //           console.log(this.phone);
+     //           console.log(this.fee)
+     //       }
+     //   }
+     //   let stu = new student();
+     //   stu.print();
+
+
+     //////////CLASS INHERITANCE////////
+
+     class student{
+        constructor(){
+            this.name = "kajal";
+            this.age = 20;
+            this.fees = 2000;
+        }
+        showName(){
+            console.log(this.name);
+            console.log(this.age);
+        }
+     }
+     class Faculty extends student{
+        constructor(){
+            super(student);
+            this.age1 =50;
+            this.name1 = "neha";
+            this.salary = 15000; 
+        }
+     }
+     let f = new Faculty();
+     console.log(f.name);
+     console.log(f.age);
+     console.log(f.salary);
+     console.log(f.fees);
+     console.log(f.name1);
+     console.log(f.age1);
+     
+
+     ////////////PARAMETERIZED CONSTRUCTOR WITH PARENT CLASS/////
+
+
+       // class parent{
+       //     constructor(name){
+       //         this.name = name;
+       //     }
+       //     showName(){
+       //         console.log("my name is aarti" + this.name);
+       //     }
+       // }
+
+       // class student extends parent{
+       //     constructor(name,index){
+       //         super(name);
+       //         this.index = index;
+       //     }
+       // }
+       // let stu = new student("singh",2);
+       // console.log(stu.name);
+       // console.log(stu.index);
+       // stu.showName();
+
+
+       ///////////////////STATIC METHOD///////////
+
+     //  class student{
+     //   constructor(){
+     //       this.name = "kajal";
+     //       this.age = 19;
+     //       this.rollno = 11;
+     //       this.fee = 4000;
+     //   }
+     //   static show(){
+     //       console.log(this.name);
+     //   }
+
+     //  }
+     //  //accessing statice method //
+     //  student.show();
+
+    </script>
+</body>
+</html>
