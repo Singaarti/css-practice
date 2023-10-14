@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+    <div class="container" id="form1">
+        <h1 class="h1">Student Registration Form</h1>
+        <div>
+            <form>
+    
+                <label>first Name : </label>
+                <input  class="Fwidthh padding" placeholder="First Name" name="firstname" >
+                <br> 
+                <br>
+                <label>Middle Name : </label> 
+                <input  class="Fwidthh padding" placeholder="Middle Name" name="MiddleName">
+                <br>
+                <br>
+               <label>Last Name : </label>
+               <input class="Fwidthh padding" placeholder="Last Name" name="LastName">
+                <br>
+                <br>
+               <label>Date of Birth : </label>
+               <input class="Fwidthh padding " placeholder="Date of Birth" name="dateofbirth">
+                <br>
+                <br>
+               <label>Address : </label>
+               <input class="Fwidthh padding" placeholder="Address" name="Address">
+                <br>
+    
+                <br>
+                <label>phone.no : </label>
+                <input class="Fwidthh padding" placeholder="phone.no" name="phone">
+                <br>
+    
+                <br>
+                <label>Password : </label>
+                <input class="Fwidthh padding" placeholder="Password" name="password">
+                <br>
+    
+                <small id="namemasg9"></small>
+                <br>
+                <input id="submit" class="Fwidthh padding  align" type="button"  value="submit">
+                <br>
+    
+    
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function form(){
+            form1 = document.getElementById("form1").value
+            console.log(form1);
+
+        }
+
+       submit = document.querySelector("#html");
+       
+       submit.addEventListener("mouseover",form);
+ 
+    </script>
+</body>
+</html>

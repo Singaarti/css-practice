@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #on{
+        background-color: yellow;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div class="hello1 hello2 hello3 hello4 hello5" id="on">hello div</div>
+    <script>
+        hi=document.getElementById("on");
+        console.log(hi);
+        //hi.classList.remove("lastname");
+        attr = hi.removeAttribute("class");
+        attr = hi.removeAttribute(value);
+        console.log(attr);
+
+
+        
+    </script>
+</body>
+</html>

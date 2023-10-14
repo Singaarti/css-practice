@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-listner</title>
+</head>
+<body>
+    <button type="button" id="btn" value="submit" data-city="hi">submit</button>
+    <p id="width"></p>
+    <p id="height"></p>
+    <script>
+        
+   //      document.querySelector("#html").addEventListener("mouseover", function(a){
+   //         // alert("hiddd");
+//
+   //         console.log(a);
+   //         console.log(a.clientX);
+   //         console.log(a.clientY);
+   //         if(a.clientY <= 100){
+   //             alert("login");
+   //         }
+   //         document.querySelector("#width").innerHTML = a.clientX;
+   //         document.querySelector("#height").innerHTML = a.clientY;
+   //     });
+
+
+ 
+     //document.querySelector("#html").addEventListener("mouseover", function(){
+//
+     //       alert("hiddd");
+     //   });
+       
+      function hello(){
+          alert("hye");
+      }
+    
+     function hello2(){
+          alert("bye");
+     }
+    
+     x = document.querySelector("#html");
+      // x = document.getElementById("btn");
+     x.addEventListener("mouseover", hello)
+     x.addEventListener("mouseover", hello2)
+     
+     
+
+
+      /* 
+        function bye(){
+             alert("hye");
+         }
+         x = document.querySelector("#btn");
+        // x = document.getElementById("btn")
+         x.addEventListener("click", bye);
+
+    */ 
+         
+
+  /*   
+
+     x = document.querySelector("#btn");
+     x.addEventListener("click", function(){
+         alert("okay");
+     });
+
+  */ 
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<style>
+
+table { background: #ccc; width: 100%; }
+table thead { background: #333; color: #fff; }
+table tbody { background: magenta; color: #fff; }
+
+</style>
+
+<button onclick="deleteRow()">Delete Row</button>
+<table id="table">
+    <thead>
+      <tr>
+        <td>foo</td>
+        <td>bar</td>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td>lorem</td>
+          <td>ipsum</td>
+        </tr>
+      </tbody>
+      <tbody>
+    
+
+    <tr>
+          <td>lorem</td>
+          <td>ipsum</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+        var table = document.getElementById('table');
+        
+    function deleteRow () {
+      table.deleteRow(1);
+    };
+</script>
+
+</body>
+</html>

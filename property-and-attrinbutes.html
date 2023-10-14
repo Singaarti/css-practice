@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+<style>
+    #div{
+        background-color:skyblue;
+        border: 2px solid red;
+    }
+</style>
+<div class="firstname lastname" id="div">hello </div>
+
+    <script>
+
+        hi = document.getElementById("div");
+        
+        console.log(hi);
+      hi.classList.remove("lastname");
+
+        /*
+        console.log(hi.classList);
+        console.log(hi.classList[1]);
+        console.log(hi.classList.length);
+        console.log(hi.classList.value);
+        console.log(hi.classList.name);
+      
+        console.log(hi.baseURI.value);
+        */
+/*
+
+        hi.className = "xyz";
+   
+         hi.classList.add("hlo");
+         x = hi.classList.item(1);
+         console.log(x);
+
+         hi.classList.remove("lastname");
+         hi.classList.replace("firstname","hello");
+   
+         hi.classList.toggle("aarti");
+         y = hi.classList.replace("firstname" , "bye");
+         console.log(y);
+
+
+        hi.classList.toggle("aarti");
+   */
+    </script>
+</body>
+</html>
